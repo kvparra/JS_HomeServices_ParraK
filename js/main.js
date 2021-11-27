@@ -81,7 +81,7 @@ function validarFormulario(evento) {
     if (document.fvalida.tiempoElegido.selectedIndex==0){
         const alertTres = document.createElement('div');
         alertTres.className = "alert alert-danger p-2 mb-3 mt-3";
-        alertTres.innerHTML = 'Debe seleccionar un para cuándo requiere el servicio';
+        alertTres.innerHTML = 'Debe seleccionar para cuándo requiere el servicio';
         divTiempos.appendChild(alertTres);
         document.fvalida.tiempoElegido.focus();
         return 0;
