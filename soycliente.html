@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Cliente</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logoytitulo d-flex">
+            <a id="header_media-logo" class="navbar-brand" href="/index.html">
+            <img src="" alt="x" width="30" height="24" class="d-inline-block align-text-top">
+            </a>
+    
+            <div class="header__titulo">
+                HOME<span>SERVICES</span>
+            </div>
+        </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-light">
+            <div class="navbar-items">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div id="navbarNavDropdown" class="collapse navbar-collapse">
+    
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                </li>
+    
+    
+                <li class="nav-item">
+                <a class="nav-link" href="/soycliente.html">SOY CLIENTE</a>
+                </li>
+    
+                <li class="nav-item">
+                <a class="nav-link" href="/soyprof.html">SOY PROFESIONAL</a>
+                </li>
+    
+            </ul>
+    
+            </div>
+        </div>
+    
+        </nav>
+    </header>
+
+    
+
+
+    <div id="content" class="contactFormCliente">
+        <form name="fvalida" id="custom-form" class="row g-3">
+            <div class="col-md-6">
+                <label for="nameCliente" class="form-label">Nombre:</label>
+                <input id="nameCliente" type="text" class="form-control"  placeholder="Introduce aquí tu nombre">
+            </div>
+            <div class="col-md-6">
+                <label for="lastNameCliente" class="form-label">Apellido:</label>
+                <input id="lastNameCliente" type="text" class="form-control"  placeholder="Introduce aquí tu apellido">
+            </div>
+
+            <div class="col-md-6">
+                <label for="ciudadCliente" class="form-label">Ciudad:</label>
+                <input id="ciudadCliente" type="text" class="form-control"  placeholder="Introduce aquí la ciudad donde vives">
+            </div>
+            <div class="col-md-6">
+                <label for="barrioCliente" class="form-label">Barrio:</label>
+                <input id="barrioCliente" type="text" class="form-control"  placeholder="Introduce aquí el barrio donde vives">
+            </div>
+        
+            <div class="col-md-12">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="name@sitio.com">
+            </div>
+        
+            <div class="col-md-12" id="divServicio">
+            <label for="servicioElegido" class="form-label" placeholder="Seleccione el servicio requerido">Servicio requerido:    </label>
+            <select name="servicioElegido" id="servicioElegido" class="form-select">
+                <option value="Elegir"> ... </option>
+                <option value="Plomero">Plomero</option>
+                <option value="Pintor">Pintor</option>
+                <option value="Gasista">Gasista</option>
+                <option value="Albanil">Albañil</option>
+                <option value="Electricista">Electricista</option>
+                <option value="Reparador de electrodomésticos">Reparador de electrodomésticos</option>
+                <option value="Jardinero">Jardinero</option>
+            </select>
+            </div>
+
+            <div class="col-md-12" id="divTiempo">
+                <label for="tiempoElegido" class="form-label"> ¿Para cuándo requiere el servicio?   </label>
+                <select id="tiempoElegido" id="tiempoElegido" class="form-select">
+                    <option value="Elegir"> ... </option>
+                    <option value="URGENTE: hoy mismo">Urgente: hoy mismo </option>
+                    <option value="en un plazo de 2 días">En un plazo de 2 días </option>
+                    <option value="en un plazo de una semana">En un plazo de una semana</option>
+                </select>
+                </div>
+        
+
+        
+            <div class="col-12 mb-2">
+                <h5>Comentario adicional</h5>
+                <textarea name="tipearAqui" id="tipearAqui" class="col-md-12 mb-2" ></textarea>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check" id="checkIt">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    Acepto las condiciones de la página al enviar este formulario.
+                    </label>
+                </div>
+            </div>
+        
+            <div class="d-grid gap-2 ">
+                <button id="btnLoad" class="btn btn-secondary">Agregar datos</button>
+            </div>
+
+            <div class="d-grid gap-2 ">
+            <input type="submit" class="btn btn-secondary" value="Enviar datos">
+            </div>
+<!--             <div class="col-12">
+                <button type="submit" class="btn btn-secondary">Enviar datos</button> 
+            </div> -->
+        
+            <div class="d-grid gap-2">
+                <button type="reset" class="btn btn-secondary">Borrar datos</button>
+            </div>
+        
+        </form>
+        </div>
+        
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+</html>
